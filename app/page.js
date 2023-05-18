@@ -1,113 +1,49 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="flex min-h-screen flex-row">
+      <div className="w-1/2 bg-black p-10 bg-center bg-[url('/nubank-bg-image.jpg')] bg-cover">
+        <div className="w-20 h-20 ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 82 46"
+            fill="#fff"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <path
+              title="Logotipo Nubank"
+              d="M1.618 12.46A14.325 14.325 0 0 1 14.25 4.75c.19 0 .378 0 .564.01-2.44 2.551-3.748 5.671-3.939 10.441-.042 1.006 0 5.912 0 11.425v17.693H.049V25.007c0-1.993-.11-4.039 0-6.051.123-2.245.514-4.45 1.569-6.497ZM24.876.48a13.65 13.65 0 0 0-10.09 4.296c8.068 0 13.29 5.493 13.583 14.241.066 2.006.088 12.744.088 12.744v12.55h10.825V27.348c0-5.128.042-9.569-.316-12.625C37.968 6.194 32.748.481 24.875.481Zm57.075 26.4c.11-2.012 0-4.055 0-6.048V1.52H71.128v17.69c0 5.507.042 10.415 0 11.426-.19 4.772-1.498 7.89-3.939 10.44.187 0 .376.013.565.013a14.324 14.324 0 0 0 12.633-7.71c1.055-2.053 1.445-4.255 1.564-6.498ZM57.124 45.355a13.649 13.649 0 0 0 10.09-4.295c-8.068 0-13.29-5.493-13.583-14.242-.066-2.008-.095-6.989-.095-12.758V1.509l-10.818.011v16.977c0 5.128-.042 9.568.316 12.624 1.002 8.531 6.223 14.233 14.09 14.233Z"
+              className="text-white"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/** LOGIN SESSION */}
+      <div className="w-1/2 h-screen flex-col  items-center text-white bg-zinc-900">
+        <div className="w-3/5 h-4/5 m-auto">
+          <form
+            action=""
+            className="flex w-full h-full gap-5 flex-col justify-center"
+          >
+            <h1 className="text-2xl">Acesse sua conta</h1>
+            <div className="flex flex-col">
+              <label htmlFor="">CPF</label>
+              <input type="text" />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="">Senha</label>
+              <input type="text" />
+            </div>
+            <span className="text-zinc-600">Possui 8 caracteres ou mais</span>
+            <button className="bg-zinc-800 p-3 rounded-full mt-8">
+              Continuar
+            </button>
+          </form>
+        </div>
+        <div className="flex bg-zinc-800 text-purple-400 h-1/5 flex-row items-center justify-center ">
+          <span className="p-5">Esqueci minha senha</span>
+          <span className=" p-5">Não sou cliente</span>
+        </div>
       </div>
     </main>
-  )
+  );
 }
